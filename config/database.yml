@@ -16,6 +16,4 @@ test:
 
 production:
   <<: *default
-  database: emivetca_production
-  username: emivetca_prod
-  password: <%= ENV['EMIVETCA_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
